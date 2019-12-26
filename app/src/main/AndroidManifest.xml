@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.awesome.skylightflights">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Passenger_Info"></activity>
+        <activity android:name=".FlightDetails" />
+        <activity android:name=".Flight_Management_Admin" />
+        <activity android:name=".Selection_Of_Flight" />
+        <activity android:name=".FromTo" />
+        <activity android:name=".Get_Flight_Ticket" />
+        <activity android:name=".Delete_Flight_Ticket" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Showing_Flights" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
