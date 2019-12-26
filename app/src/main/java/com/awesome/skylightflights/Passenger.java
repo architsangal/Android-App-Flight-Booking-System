@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class Passenger implements Serializable {
 
+    private String price;
     private String from_place;
     private String to_place;
     private String flight;
@@ -20,18 +21,11 @@ public class Passenger implements Serializable {
     private String gender;
     private String duration;
 
-    public Passenger(String from_place, String to_place) {
-        this.from_place = from_place;
-        this.to_place = to_place;
-    }
-
     public Passenger() {
     }
 
-    public Passenger(String from_place, String to_place, String flight, String booking_Id, int date_day, int date_month,
-                     int date_year, String dep_time, String lan_time, String name, String flight_class, int seat, int age,
-                     String gender, String duration)
-    {
+    public Passenger(String price, String from_place, String to_place, String flight, String booking_Id, int date_day, int date_month, int date_year, String dep_time, String lan_time, String name, String flight_class, int seat, int age, String gender, String duration) {
+        this.price = price;
         this.from_place = from_place;
         this.to_place = to_place;
         this.flight = flight;
@@ -47,6 +41,14 @@ public class Passenger implements Serializable {
         this.age = age;
         this.gender = gender;
         this.duration = duration;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 
     public String getDuration() {
