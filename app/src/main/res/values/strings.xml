@@ -30,6 +30,7 @@
     <string name="departure_time">Departure Time(HHMM)</string>
     <string name="enter_flight_details">Enter Flight Details</string>
     <string name="add_flight">ADD FLIGHT</string>
+    <string name="proceed_to_payment">Proceed To Payment</string>
     <string-array name="class_flight">
         <item>Economy Class</item>
         <item>Business Class</item>

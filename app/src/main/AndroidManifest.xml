@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".review_details"></activity>
+        <activity android:name=".payment_portal"></activity>
+        <activity android:name=".review_details" />
         <activity android:name=".seat_selection" />
         <activity android:name=".Passenger_Info" />
         <activity android:name=".FlightDetails" />
