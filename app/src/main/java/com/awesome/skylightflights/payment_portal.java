@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -21,6 +23,7 @@ public class payment_portal extends AppCompatActivity {
     private DocumentReference flightRef;
     private DocumentReference passengerRef;
     private DocumentReference bank;
+    private Button enter_email;
 
 
     @Override
@@ -30,6 +33,7 @@ public class payment_portal extends AppCompatActivity {
         Intent intent_prev = getIntent();
         final Passenger passenger = (Passenger) intent_prev.getSerializableExtra("passenger");
 
+        enter_email = findViewById(R.id.enter_email);
         String Date_sel = passenger.getDate_day()
                 +"." + passenger.getDate_month()
                 +"." + passenger.getDate_year();
@@ -81,5 +85,13 @@ public class payment_portal extends AppCompatActivity {
 
                     }
                 });
+        enter_email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(payment_portal.this,email_generation.class);
+                intent.putExtra("passenger", passenger);
+                startActivity(intent);
+            }
+        });
     }
 }
