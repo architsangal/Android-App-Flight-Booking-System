@@ -27,9 +27,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:19.2.0'
     implementation 'com.google.firebase:firebase-auth:19.2.0'
     implementation 'com.google.firebase:firebase-firestore:21.3.1'
-    compile files('libs/activation.jar')
-    compile files('libs/additional.jar')
-    compile files('libs/mail.jar')
+    implementation files('libs/activation.jar')
+    implementation files('libs/additional.jar')
+    implementation files('libs/mail.jar')
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
