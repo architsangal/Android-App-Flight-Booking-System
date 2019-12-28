@@ -47,8 +47,16 @@ public class email_generation extends AppCompatActivity {
                     Intent intent_prev = getIntent();
                     final Passenger passenger = (Passenger) intent_prev.getSerializableExtra("passenger");
                     GMailSender sender = new GMailSender("skylights.airlines@gmail.com", "QwerAsdfZxcv");
-                    String body = "Dear " + passenger.getName();
-                    sender.sendMail("Skylights Flights Welcome You To Sky",body,"skylights.airlines@gmail.com", email_address.getText().toString().trim().toLowerCase());
+                    String body = "Dear " + passenger.getName()+",\n" + "Your flight ticket for flight number :- "
+                            + passenger.getFlight() +"\n From : " +passenger.getFrom_place() + "\n To   : "
+                            + passenger.getTo_place()+"\n on "+passenger.getDate_day()+"-"+passenger.getDate_month()
+                            +"-"+passenger.getDate_year()+ " at " + passenger.getDep_time().substring(0,2)+":"
+                            +passenger.getDep_time().substring(2)+" has been confirmed.\nPlease report to " +
+                            "check-in atleast 2 hours before the time of departure. We wish you a pleasant flight." +
+                            " Thanks for using Skylights Flights.\n\nRegards,\nSkylight Airlines.";
+
+                    sender.sendMail("Skylights Flights Welcome You To Sky",body,"skylights.airlines@gmail.com",
+                            email_address.getText().toString().trim().toLowerCase());
                     dialog.dismiss();
                 } catch (Exception e) {
                     Log.e("mylog", "Error: " + e.getMessage());

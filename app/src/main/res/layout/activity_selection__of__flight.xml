@@ -38,8 +38,9 @@
         android:layout_width="103dp"
         android:layout_height="51dp"
         android:layout_marginTop="20dp"
-        android:text="NEXT"
         android:background="@drawable/rounded_buttons"
+        android:text="NEXT"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selected_flight" />

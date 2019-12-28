@@ -88,7 +88,7 @@ public class seat_selection extends AppCompatActivity {
                                     else
                                         seat_data = seat_data + "    W [ " + i +" ] ";
                                 else
-                                    seat_data = seat_data + "    W [  X ] ";
+                                    seat_data = seat_data + "    W [   X ] ";
                             }
                             else if(i%4 == 2)
                             {
@@ -98,17 +98,17 @@ public class seat_selection extends AppCompatActivity {
                                     else
                                         seat_data = seat_data + "[ " + i +" ]    ";
                                 else
-                                    seat_data = seat_data + "W [  X ]    ";
+                                    seat_data = seat_data + "[   X ]    ";
                             }
                             else if(i%4 == 3)
                             {
                                 if(seats[i].equals("0"))
                                     if(i<10)
-                                        seat_data = seat_data + "[   " + i +" ] ";
+                                        seat_data = seat_data + " [   " + i +" ] ";
                                     else
                                         seat_data = seat_data + "[ " + i +" ] ";
                                 else
-                                    seat_data = seat_data + "[  X ] ";
+                                    seat_data = seat_data + "[   X ] ";
                             }
                             else
                             {
@@ -118,7 +118,7 @@ public class seat_selection extends AppCompatActivity {
                                     else
                                         seat_data = seat_data + "[ " + i +" ] W\n";
                                 else
-                                    seat_data = seat_data + "[  X ] W\n";
+                                    seat_data = seat_data + "[   X ] W\n";
                             }
                         }
                         seat_data = "\n\n\n" + seat_data + "\n" + "    Enter The Number Of Seat\n    You Want to book";

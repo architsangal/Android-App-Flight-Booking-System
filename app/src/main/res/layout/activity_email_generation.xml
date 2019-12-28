@@ -29,6 +29,7 @@
         android:layout_marginTop="84dp"
         android:background="@drawable/rounded_buttons"
         android:text="GO"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
