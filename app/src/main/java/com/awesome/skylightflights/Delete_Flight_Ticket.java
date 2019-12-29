@@ -27,6 +27,8 @@ public class Delete_Flight_Ticket extends AppCompatActivity {
     private Button delete_ticket;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     DocumentReference bookingRef;
+    DocumentReference emailRef;
+    DocumentReference bankRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,26 +48,45 @@ public class Delete_Flight_Ticket extends AppCompatActivity {
                 {
                     id = Integer.parseInt(booking_id.getText().toString().trim());
                     bookingRef = db.collection(booking_id.getText().toString().trim()).document(name.getText().toString().trim());
-                    bookingRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    emailRef = db.collection(booking_id.getText().toString().trim()).document("email");
+                    bankRef = db.collection("Bank").document("bank");
+                    bookingRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>()
+                    {
                         @Override
                         public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                             if (task.isSuccessful()) {
-                                DocumentSnapshot document = task.getResult();
+                                final DocumentSnapshot document = task.getResult();
                                 if (document.exists())
                                 {
-                                    Map<String,Object> map = new HashMap<>();
-                                    map.put("status","Cancelled");
-                                    bookingRef.update(map)
-                                            .addOnSuccessListener(new OnSuccessListener<Void>()
-                                            {
-                                                @Override
-                                                public void onSuccess(Void aVoid)
-                                                {
-                                                    Toast.makeText(Delete_Flight_Ticket.this,"Ticket Successfully Cancelled.",Toast.LENGTH_LONG).show();
-                                                    Intent intent = new Intent(Delete_Flight_Ticket.this,Menu.class);
-                                                    startActivity(intent);
-                                                }
-                                            });
+                                    if(document.getString("status").equals("Cancelled"))
+                                        Toast.makeText(Delete_Flight_Ticket.this,"Ticket Already Cancelled",Toast.LENGTH_LONG).show();
+                                    else
+                                    {
+                                        final Bank bank = new Bank();
+                                        bank.setNo2(document.getString("price"));
+                                        Map<String, Object> map = new HashMap<>();
+                                        map.put("status", "Cancelled");
+                                        bookingRef.update(map)
+                                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                    @Override
+                                                    public void onSuccess(Void aVoid) {
+                                                        Toast.makeText(Delete_Flight_Ticket.this, "Ticket Successfully Cancelled.", Toast.LENGTH_LONG).show();
+                                                        Intent intent = new Intent(Delete_Flight_Ticket.this, Menu.class);
+                                                        startActivity(intent);
+                                                    }
+                                                });
+                                        bankRef.get()
+                                                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                                                    @Override
+                                                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                                        bank.setNo1(documentSnapshot.getString("amount"));
+                                                        String new_amount = bank.sub();
+                                                        Map<String, Object> map1 = new HashMap<>();
+                                                        map1.put("amount", new_amount);
+                                                        bankRef.update(map1);
+                                                    }
+                                                });
+                                    }
                                 }
                                 else
                                 {
