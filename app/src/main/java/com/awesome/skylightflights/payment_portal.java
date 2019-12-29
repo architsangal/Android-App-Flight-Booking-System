@@ -39,6 +39,7 @@ public class payment_portal extends AppCompatActivity {
                 +"." + passenger.getDate_year();
 
         flightRef = db.collection(Date_sel).document(passenger.getFlight());
+        passenger.setBooking_Id(genBookingId()+"");
 
         Map<String,Object> map = new HashMap<>();
         map.put(""+passenger.getSeat(),passenger.getBooking_Id());
@@ -94,5 +95,11 @@ public class payment_portal extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    public static long genBookingId()
+    {
+        int n = 10000000;
+        int m = 99999999;
+        return ((long)((Math.random()*(n-m)))+m);
     }
 }

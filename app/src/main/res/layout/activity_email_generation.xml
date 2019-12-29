@@ -10,7 +10,7 @@
         android:id="@+id/email_address"
         android:layout_width="364dp"
         android:layout_height="55dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Enter Your Email Address"
         android:inputType="textPersonName"
@@ -20,13 +20,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/see_details" />
 
     <Button
         android:id="@+id/go"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_buttons"
         android:text="GO"
         android:textColor="#FFFFFF"
@@ -34,4 +34,17 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_address" />
+
+    <TextView
+        android:id="@+id/see_details"
+        android:layout_width="347dp"
+        android:layout_height="398dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#2979FF"
+        android:textColorHint="#2979FF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

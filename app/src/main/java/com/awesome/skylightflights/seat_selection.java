@@ -121,7 +121,7 @@ public class seat_selection extends AppCompatActivity {
                                 try
                                 {//TODO check seat availability from seat_display
                                     passenger.setSeat(Integer.parseInt(seat.getText().toString().trim()));
-                                    Intent intent = new Intent(seat_selection.this,review_details.class);
+                                    Intent intent = new Intent(seat_selection.this,payment_portal.class);
                                     intent.putExtra("passenger", passenger);
                                     startActivity(intent);
                                 }

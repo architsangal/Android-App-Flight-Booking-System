@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.awesome.skylightflights.MainHelpers.GMailSender;
 import com.google.firebase.firestore.DocumentReference;
@@ -20,6 +21,7 @@ import java.util.Map;
 
 public class email_generation extends AppCompatActivity {
 
+    private TextView review;
     private Button go;
     private EditText email_address;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -29,8 +31,45 @@ public class email_generation extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email_generation);
+
         go = findViewById(R.id.go);
         email_address = findViewById(R.id.email_address);
+        review = findViewById(R.id.see_details);
+
+        Intent intent_prev = getIntent();
+        final Passenger passenger = (Passenger) intent_prev.getSerializableExtra("passenger");
+
+        String data = "See Details Of Booking\n\nName : ";
+        int length = passenger.getName().length();
+        if(length<14)
+        {
+            data += passenger.getName();
+            for(int i=length;i<13;i++)
+                data +=" ";
+        }
+        else
+        {
+            data += passenger.getName().substring(0,13);
+        }
+        data += "\nAge    : " + passenger.getAge() + " years";
+        data += "\nGender  : " + passenger.getGender();
+
+        data += "\nFlight     : " + passenger.getFlight();
+        data += "\nFrom     : " + passenger.getFrom_place();
+        data += "\nTo          : " + passenger.getTo_place();
+        data += "\nDate      : " + passenger.getDate_day()
+                +"." + passenger.getDate_month()
+                +"." + passenger.getDate_year();
+        data += "\nDep. time     : " + passenger.getDep_time();
+        data += "\nLand. time   : " + passenger.getLan_time();
+        review.setText(data);
+
+        data += "\nFlight Class : " + passenger.getFlight_class();
+        data += "\nPrice : Rs " + passenger.getPrice();
+        data += "\nSeat  : " + passenger.getSeat();
+        data += "\nDuration     : " + passenger.getDuration() + " min";
+        data += "\nBooking Id : " + passenger.getBooking_Id();
+        review.setText(data);
 
         go.setOnClickListener(new View.OnClickListener() {
             @Override
