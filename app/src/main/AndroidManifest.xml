@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".email_generation"></activity>
+        <activity android:name=".Delete_Flight"></activity>
+        <activity android:name=".email_generation" />
         <activity android:name=".payment_portal" />
         <activity android:name=".review_details" />
         <activity android:name=".seat_selection" />

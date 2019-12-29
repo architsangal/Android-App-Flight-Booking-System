@@ -34,7 +34,7 @@ public class Flight_Management_Admin extends AppCompatActivity implements View.O
         }
         else if(v.getId() == R.id.delete_flight)
         {
-            Intent intent = new Intent(Flight_Management_Admin.this,FlightDetails.class);
+            Intent intent = new Intent(Flight_Management_Admin.this,Delete_Flight.class);
             startActivity(intent);
         }
 

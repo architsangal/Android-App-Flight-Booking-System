@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Delete_Flight">
+
+    <EditText
+        android:id="@+id/flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter The Flight Number"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColor="#2979FF"
+        android:textColorHint="#2979FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/d_d"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Day"
+        android:inputType="numberSigned|number"
+        android:textAlignment="center"
+        android:textColor="#2979FF"
+        android:textColorHint="#2979FF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flight" />
+
+    <EditText
+        android:id="@+id/d_m"
+        android:layout_width="78dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Month"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColor="#2979FF"
+        android:textColorHint="#2979FF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flight" />
+
+    <EditText
+        android:id="@+id/d_y"
+        android:layout_width="117dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Year"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColor="#2979FF"
+        android:textColorHint="#2979FF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flight" />
+
+    <Button
+        android:id="@+id/delete_flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_buttons"
+        android:text=" Delete Flight "
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_m" />
+</androidx.constraintlayout.widget.ConstraintLayout>

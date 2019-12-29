@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView password_number;
     private int[] password = new int[50];
     private int current_password_key=0;
-    private String enter_password="1234";
+    private String enter_password="75790152222225109757";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
