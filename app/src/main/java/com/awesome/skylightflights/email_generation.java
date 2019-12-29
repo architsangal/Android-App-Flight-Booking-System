@@ -73,9 +73,9 @@ public class email_generation extends AppCompatActivity {
                     Map<String,Object> map = new HashMap<>();
                     map.put("email",passenger.getEmail());
 
-                    flightRef = db.collection(passenger.getBooking_Id()).document(passenger.getName());
+                    flightRef = db.collection(passenger.getBooking_Id()).document("email");
 
-                    flightRef.update(map);
+                    flightRef.set(map);
 
                     dialog.dismiss();
                 } catch (Exception e) {
