@@ -30,12 +30,12 @@ public class Delete_Flight extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delete__flight);
 
-        d_d = findViewById(R.id.d_d);
-        d_m = findViewById(R.id.d_m);
-        d_y = findViewById(R.id.d_y);
-        flight = findViewById(R.id.flight);
+        d_d = findViewById(R.id.d_day);
+        d_m = findViewById(R.id.name_delete);
+        d_y = findViewById(R.id.d_year);
+        flight = findViewById(R.id.booking_id);
 
-        delete = findViewById(R.id.delete_flight);
+        delete = findViewById(R.id.delete_ticket);
 
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +55,7 @@ public class Delete_Flight extends AppCompatActivity {
                                 DocumentSnapshot document = task.getResult();
                                 if (document.exists())
                                 {
+                                    int price = Integer.parseInt(document.getString("price"));
                                     flightRef.delete()
                                         .addOnSuccessListener(new OnSuccessListener<Void>()
                                         {
@@ -64,7 +65,7 @@ public class Delete_Flight extends AppCompatActivity {
                                                 Toast.makeText(Delete_Flight.this,"Flight Successfully Deleted.",Toast.LENGTH_LONG).show();
                                                 Intent intent = new Intent(Delete_Flight.this,Flight_Management_Admin.class);
                                                 startActivity(intent);
-                                                //todo mail to be sent if flight is deleted....
+                                                //todo mail to be sent if booking is deleted....
                                             }
                                         });
                                 }

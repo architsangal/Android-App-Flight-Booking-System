@@ -6,4 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".Delete_Flight_Ticket">
 
+    <EditText
+        android:id="@+id/booking_id"
+        android:layout_width="272dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter The Booking Id Number"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColor="#2979FF"
+        android:textColorHint="#2979FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_delete"
+        android:layout_width="272dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter Your Name"
+        android:inputType="textCapWords|textCapCharacters"
+        android:textAlignment="center"
+        android:textColor="#2979FF"
+        android:textColorHint="#2979FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/booking_id" />
+
+    <Button
+        android:id="@+id/delete_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_buttons"
+        android:text=" Delete Ticket "
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_delete" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,7 +41,7 @@ public class payment_portal extends AppCompatActivity {
         flightRef = db.collection(Date_sel).document(passenger.getFlight());
 
         Map<String,Object> map = new HashMap<>();
-        map.put(""+passenger.getSeat(),"1");
+        map.put(""+passenger.getSeat(),passenger.getBooking_Id());
         flightRef.update(map);
 
         Map<String,Object> pass_info = new HashMap<>();
@@ -61,6 +61,7 @@ public class payment_portal extends AppCompatActivity {
         pass_info.put("age",passenger.getAge()+"");
         pass_info.put("gender",passenger.getGender());
         pass_info.put("duration",passenger.getDuration());
+        pass_info.put("status","booked");
 
         passengerRef = db.collection(passenger.getBooking_Id()+"")
                 .document(passenger.getName());

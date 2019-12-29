@@ -1,11 +1,15 @@
 package com.awesome.skylightflights;
 
-import android.content.Intent;
+import java.io.Serializable;
 
-public class Bank
+public class Bank implements Serializable
 {
     public String add(String price,String price2)
     {
         return ((Integer.parseInt(price)+Integer.parseInt(price2))+"");
+    }
+    public String sub(String price,String price2)
+    {
+        return ((Integer.parseInt(price)-Integer.parseInt(price2))+"");
     }
 }

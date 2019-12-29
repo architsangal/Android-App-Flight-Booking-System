@@ -23,7 +23,6 @@ public class FlightDetails extends AppCompatActivity implements View.OnClickList
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private DocumentReference flightRef;
-    private DocumentReference Flights;
 
     private EditText from;
     private EditText to;
@@ -87,8 +86,6 @@ public class FlightDetails extends AppCompatActivity implements View.OnClickList
                             +"."+ Integer.parseInt(info.getMonth())
                             +"."+ Integer.parseInt(info.getYear());
             flightRef = db.collection(Date).document(info.getFlight_name());
-            Flights = db.collection("Flights").document(Date).collection("flights").document("flights");
-
 
             Map<String,Object> map = new HashMap<>();
             map.put("name",info.getFlight_name());
@@ -127,7 +124,7 @@ public class FlightDetails extends AppCompatActivity implements View.OnClickList
             Toast.makeText(FlightDetails.this,"Enter The Details Correctly",Toast.LENGTH_LONG).show();
         }
 
-        Flights.get()
+/*        Flights.get()
                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -152,6 +149,6 @@ public class FlightDetails extends AppCompatActivity implements View.OnClickList
                     }
                 });
 
-
+*/
     }
 }

@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,13 +69,29 @@ public class Passenger_Info extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                passenger.setName(name.getText().toString().trim());
+                passenger.setName(name.getText().toString().trim().toUpperCase());
                 passenger.setAge(Integer.parseInt(age.getText().toString().trim()));
-                passenger.setGender(gender.getText().toString().trim());
-                passenger.setFlight_class(class_selected);
-                Intent intent = new Intent(Passenger_Info.this,seat_selection.class);
-                intent.putExtra("passenger", passenger);
-                startActivity(intent);
+                try
+                {
+                    if(gender.getText().toString().trim().toUpperCase().equals("M") || gender.getText().toString().trim().toUpperCase().equals("O") || gender.getText().toString().trim().toUpperCase().equals("F"))
+                        passenger.setGender(gender.getText().toString().trim().toUpperCase());
+                    else
+                        Integer.parseInt("A");// to raise exception
+                    if(class_selected.equals("First Class") || class_selected.equals("Business Class") || class_selected.equals("Economy Class"))
+                        passenger.setFlight_class(class_selected);
+                    else
+                        Integer.parseInt("A");// to raise exception
+
+                    Intent intent = new Intent(Passenger_Info.this,seat_selection.class);
+                    intent.putExtra("passenger", passenger);
+                    startActivity(intent);
+                }
+                catch (Exception e)
+                {
+                    Toast.makeText(Passenger_Info.this,"Enter Data Correctly",Toast.LENGTH_LONG).show();
+                }
+
+
             }
         });
 

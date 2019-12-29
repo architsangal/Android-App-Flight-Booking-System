@@ -19,7 +19,7 @@ public class Flight_Management_Admin extends AppCompatActivity implements View.O
         setContentView(R.layout.activity_flight__management__admin);
 
         add = findViewById(R.id.add_flight);
-        delete = findViewById(R.id.delete_flight);
+        delete = findViewById(R.id.delete_ticket);
 
         add.setOnClickListener(this);
         delete.setOnClickListener(this);
@@ -32,7 +32,7 @@ public class Flight_Management_Admin extends AppCompatActivity implements View.O
             Intent intent = new Intent(Flight_Management_Admin.this,FlightDetails.class);
             startActivity(intent);
         }
-        else if(v.getId() == R.id.delete_flight)
+        else if(v.getId() == R.id.delete_ticket)
         {
             Intent intent = new Intent(Flight_Management_Admin.this,Delete_Flight.class);
             startActivity(intent);
