@@ -6,4 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".Get_Flight_Ticket">
 
+    <Button
+        android:id="@+id/g_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="GO"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g_name" />
+
+    <EditText
+        android:id="@+id/g_booking_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Enter Booking ID"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColor="#3D5AFE"
+        android:textColorHint="#2979FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/g_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textCapWords|textCapCharacters"
+        android:textAlignment="center"
+        android:textColor="#3D5AFE"
+        android:textColorHint="#2979FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g_booking_id" />
 </androidx.constraintlayout.widget.ConstraintLayout>

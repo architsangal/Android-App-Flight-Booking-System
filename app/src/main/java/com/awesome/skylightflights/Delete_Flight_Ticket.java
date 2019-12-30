@@ -3,7 +3,6 @@ package com.awesome.skylightflights;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.awesome.skylightflights.MainHelpers.GMailSender;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -38,7 +36,7 @@ public class Delete_Flight_Ticket extends AppCompatActivity {
         setContentView(R.layout.activity_delete__flight__ticket);
 
         name = findViewById(R.id.name_delete);
-        booking_id = findViewById(R.id.booking_id);
+        booking_id = findViewById(R.id.g_booking_id);
 
         delete_ticket = findViewById(R.id.delete_ticket);
 

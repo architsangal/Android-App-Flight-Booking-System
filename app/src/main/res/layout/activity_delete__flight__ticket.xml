@@ -7,7 +7,7 @@
     tools:context=".Delete_Flight_Ticket">
 
     <EditText
-        android:id="@+id/booking_id"
+        android:id="@+id/g_booking_id"
         android:layout_width="272dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
@@ -34,7 +34,7 @@
         android:textColorHint="#2979FF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/booking_id" />
+        app:layout_constraintTop_toBottomOf="@+id/g_booking_id" />
 
     <Button
         android:id="@+id/delete_ticket"

@@ -98,6 +98,7 @@ public class FlightDetails extends AppCompatActivity implements View.OnClickList
             map.put("land_time",info.getLan_time());
             map.put("duration",info.getDuration());
             map.put("price",info.getPrice());
+            map.put("status","Aval");
             for(int i=1;i<=20;i++)
             {
                 map.put((i + ""), "0" );

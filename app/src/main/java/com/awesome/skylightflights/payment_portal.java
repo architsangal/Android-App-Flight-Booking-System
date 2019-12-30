@@ -62,7 +62,7 @@ public class payment_portal extends AppCompatActivity {
         pass_info.put("age",passenger.getAge()+"");
         pass_info.put("gender",passenger.getGender());
         pass_info.put("duration",passenger.getDuration());
-        pass_info.put("status","booked");
+        pass_info.put("status","Booked");
 
         passengerRef = db.collection(passenger.getBooking_Id()+"")
                 .document(passenger.getName());

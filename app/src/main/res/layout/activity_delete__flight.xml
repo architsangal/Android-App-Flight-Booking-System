@@ -7,7 +7,7 @@
     tools:context=".Delete_Flight">
 
     <EditText
-        android:id="@+id/booking_id"
+        android:id="@+id/g_booking_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -34,7 +34,7 @@
         android:textColor="#2979FF"
         android:textColorHint="#2979FF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/booking_id" />
+        app:layout_constraintTop_toBottomOf="@+id/g_booking_id" />
 
     <EditText
         android:id="@+id/name_delete"
@@ -49,7 +49,7 @@
         android:textColor="#2979FF"
         android:textColorHint="#2979FF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/booking_id" />
+        app:layout_constraintTop_toBottomOf="@+id/g_booking_id" />
 
     <EditText
         android:id="@+id/d_year"
@@ -64,7 +64,7 @@
         android:textColor="#2979FF"
         android:textColorHint="#2979FF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/booking_id" />
+        app:layout_constraintTop_toBottomOf="@+id/g_booking_id" />
 
     <Button
         android:id="@+id/delete_ticket"

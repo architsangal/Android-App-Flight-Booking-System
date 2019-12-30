@@ -33,7 +33,7 @@ public class Delete_Flight extends AppCompatActivity {
         d_d = findViewById(R.id.d_day);
         d_m = findViewById(R.id.name_delete);
         d_y = findViewById(R.id.d_year);
-        flight = findViewById(R.id.booking_id);
+        flight = findViewById(R.id.g_booking_id);
 
         delete = findViewById(R.id.delete_ticket);
 

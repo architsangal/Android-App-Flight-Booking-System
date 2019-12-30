@@ -67,7 +67,7 @@ public class Selection_Of_Flight extends AppCompatActivity {
                         String data = "S.No.    Flight Name    Price(in Rs)    Dep. Time   Land. Time\n";
                         for(QueryDocumentSnapshot snapshots : queryDocumentSnapshots)
                         {
-                            if(snapshots.getString("from").trim().equals(from.trim()) && snapshots.getString("to").trim().equals(to.trim()))
+                            if(snapshots.getString("from").trim().equals(from.trim()) && snapshots.getString("to").trim().equals(to.trim()) && snapshots.getString("status").trim().equals("Aval"))
                             {
                                 for(int i=1;i<=20;i++)
                                 {
