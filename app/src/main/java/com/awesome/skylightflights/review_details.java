@@ -46,7 +46,7 @@ public class review_details extends AppCompatActivity {
                     final email emails = (email) intent_prev.getSerializableExtra("emails");
                     GMailSender sender = new GMailSender("skylights.airlines@gmail.com", "QwerAsdfZxcv");
 
-                    sender.sendMail("Skylights Flights Welcome You To Sky",emails.getBody(),"skylights.airlines@gmail.com",
+                    sender.sendMail("Ticket Cancelled",emails.getBody(),"skylights.airlines@gmail.com",
                             emails.getEmail());
                     dialog.dismiss();
                 } catch (Exception e) {

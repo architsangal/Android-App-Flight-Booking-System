@@ -18,12 +18,17 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Delete_Flight extends AppCompatActivity {
 
     private EditText d_d,d_m,d_y,flight;
     private Button delete;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     DocumentReference flightRef;
+    private DocumentReference bankRef;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,18 +61,40 @@ public class Delete_Flight extends AppCompatActivity {
                                 if (document.exists())
                                 {
                                     int price = Integer.parseInt(document.getString("price"));
-                                    flightRef.delete()
+                                    Map<String,Object> map = new HashMap<>();
+                                    map.put("status","Cancelled");
+                                    flightRef.update(map)
                                         .addOnSuccessListener(new OnSuccessListener<Void>()
                                         {
                                             @Override
                                             public void onSuccess(Void aVoid)
                                             {
                                                 Toast.makeText(Delete_Flight.this,"Flight Successfully Deleted.",Toast.LENGTH_LONG).show();
-                                                Intent intent = new Intent(Delete_Flight.this,Flight_Management_Admin.class);
-                                                startActivity(intent);
                                                 //todo mail to be sent if booking is deleted....
                                             }
                                         });
+                                    int c = 0;
+                                    for(int i=1;i<=20;i++)
+                                        if(!document.getString(i+"").equals("0"))
+                                            c++;
+                                    Log.d("Price",price+"");
+                                    int change_price = c * price;
+
+                                    final Bank bank = new Bank();
+                                    bank.setNo2(change_price+"");
+                                    bankRef = db.collection("Bank").document("bank");
+                                    bankRef.get()
+                                            .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                                                @Override
+                                                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                                    bank.setNo1(documentSnapshot.getString("amount"));
+                                                    String new_amount = bank.sub();
+                                                    Map<String, Object> map1 = new HashMap<>();
+                                                    map1.put("amount", new_amount);
+                                                    bankRef.update(map1);
+                                                }
+                                            });
+                                    Intent intent = new Intent(Delete_Flight.this,deleting_flight_process.class);//deleting_flight_process.class
                                 }
                                 else
                                 {
@@ -78,7 +105,6 @@ public class Delete_Flight extends AppCompatActivity {
                             }
                         }
                     });
-
                 }
                 catch(Exception e)
                 {
