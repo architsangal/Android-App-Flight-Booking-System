@@ -119,7 +119,7 @@ public class seat_selection extends AppCompatActivity {
                             @Override
                             public void onClick(View v) {
                                 try
-                                {//TODO check seat availability from seat_display
+                                {
                                     passenger.setSeat(Integer.parseInt(seat.getText().toString().trim()));
                                     Intent intent = new Intent(seat_selection.this,payment_portal.class);
                                     intent.putExtra("passenger", passenger);

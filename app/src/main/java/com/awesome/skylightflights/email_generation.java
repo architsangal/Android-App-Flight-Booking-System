@@ -95,7 +95,10 @@ public class email_generation extends AppCompatActivity {
 
                     Intent intent_prev = getIntent();
                     final Passenger passenger = (Passenger) intent_prev.getSerializableExtra("passenger");
-                    GMailSender sender = new GMailSender("skylights.airlines@gmail.com", "QwerAsdfZxcv");
+                    GMailSender sender = new GMailSender(""/* Enter email id in "" */ , "" /*Enter password in "" */);
+                    // TODO Enter you email ID and password here
+                    // e.g. if email id is "skylights.airlines@gmail.com" and password is "password"
+                    // then enter it as :- GMailSender sender = new GMailSender("skylights.airlines@gmail.com", "password");
                     String body = "Dear " + passenger.getName()+",\n" + "Your flight ticket for flight number :- "
                             + passenger.getFlight() + "\n Booking Id : " + passenger.getBooking_Id() + "\n From : " +passenger.getFrom_place() + "\n To   : "
                             + passenger.getTo_place()+ "\n Seat : "+ passenger.getSeat() +"\non "+passenger.getDate_day()
@@ -126,4 +129,4 @@ public class email_generation extends AppCompatActivity {
     }
 
 }
-// TODO REMOVE NAVIGATION BAR
+//REMOVE NAVIGATION BAR - Extra Feature that can be added

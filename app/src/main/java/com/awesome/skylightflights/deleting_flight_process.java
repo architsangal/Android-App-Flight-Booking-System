@@ -68,7 +68,10 @@ public class deleting_flight_process extends AppCompatActivity {
                 {
                     //TODO remove password and email address before uploading
 
-                    GMailSender sender = new GMailSender("skylights.airlines@gmail.com", "QwerAsdfZxcv");
+                    GMailSender sender = new GMailSender("" /* Enter email id in "" */ , "" /*Enter password in "" */ );
+                    // TODO Enter you email ID and password here
+                    // e.g. if email id is "skylights.airlines@gmail.com" and password is "password"
+                    // then enter it as :- GMailSender sender = new GMailSender("skylights.airlines@gmail.com", "password");
                     String body = "Dear Customer," +
                             "\nYour flight has been canceled due to bad weather conditions in that region. " +
                             "We sincerely regret this inconvenience and assure you that we will refund the money immediately." +

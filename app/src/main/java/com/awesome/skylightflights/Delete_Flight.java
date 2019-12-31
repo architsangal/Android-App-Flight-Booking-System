@@ -70,7 +70,7 @@ public class Delete_Flight extends AppCompatActivity {
                                             public void onSuccess(Void aVoid)
                                             {
                                                 Toast.makeText(Delete_Flight.this,"Flight Successfully Deleted.",Toast.LENGTH_LONG).show();
-                                                //todo mail to be sent if booking is deleted....
+                                                // mail to be sent if booking is deleted.... This feature can be added but Right Now it will not affect the completeness of the program it after all just an extra feature
                                             }
                                         });
                                     int c = 0;

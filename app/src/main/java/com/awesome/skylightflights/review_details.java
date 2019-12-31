@@ -30,6 +30,8 @@ public class review_details extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    // This Function is not used
     private void sendMessage() {
         final ProgressDialog dialog = new ProgressDialog(review_details.this);
         dialog.setTitle("Sending Email");
@@ -44,7 +46,7 @@ public class review_details extends AppCompatActivity {
 
                     Intent intent_prev = getIntent();
                     final email emails = (email) intent_prev.getSerializableExtra("emails");
-                    GMailSender sender = new GMailSender("skylights.airlines@gmail.com", "QwerAsdfZxcv");
+                    GMailSender sender = new GMailSender("", "");
 
                     sender.sendMail("Ticket Cancelled",emails.getBody(),"skylights.airlines@gmail.com",
                             emails.getEmail());

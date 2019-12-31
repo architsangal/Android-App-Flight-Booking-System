@@ -10,24 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ce1bac5-11d0-4287-88a3-debc839a8a14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/deleting_flight_process.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_deleting_flight_process.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Delete_Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Delete_Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Show_Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Show_Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/deleting_flight_process.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/deleting_flight_process.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/email_generation.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/email_generation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/review_details.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/review_details.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_seat_selection.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_seat_selection.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_selection__of__flight.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_selection__of__flight.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/seat_selection.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/seat_selection.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,10 +45,65 @@
           <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_selection__of__flight.xml">
           <provider editor-type-id="text-editor" />
           <provider selected="true" editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Delete_Flight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/deleting_flight_process.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="74" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+              <folding>
+                <element signature="e#2093#3509#0" expanded="true" />
+                <element signature="e#3508#3509#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/email_generation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="131" column="57" selection-start-line="131" selection-start-column="57" selection-end-line="131" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/review_details.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/seat_selection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1740">
+              <caret line="121" column="33" selection-start-line="121" selection-start-column="33" selection-end-line="121" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -105,8 +147,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Bank.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_payment_portal.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/email_generation.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/seat_selection.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_email_generation.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/email.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Delete_Flight_Ticket.java" />
@@ -117,11 +157,13 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_show__ticket.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Get_Flight_Ticket.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Show_Ticket.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/deleting_flight_process.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Delete_Flight.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/review_details.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_seat_selection.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_selection__of__flight.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Delete_Flight.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/deleting_flight_process.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/email_generation.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/review_details.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/seat_selection.java" />
       </list>
     </option>
   </component>
@@ -318,7 +360,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23187603" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23187603" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -328,7 +370,7 @@
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Run" order="0" sideWeight="0.4991699" weight="0.32937366" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.45464364" />
-      <window_info anchor="bottom" id="TODO" order="2" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="TODO" order="2" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32937366" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5008301" side_tool="true" weight="0.32937366" />
@@ -517,16 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/seat_selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="123" column="100" selection-start-line="123" selection-start-column="100" selection-end-line="123" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/email.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -658,45 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/email_generation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Delete_Flight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="79" column="57" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="57" />
-          <folding>
-            <element signature="e#1350#5621#0" expanded="true" />
-            <element signature="e#2010#5402#0" expanded="true" />
-            <element signature="e#4178#4923#0" expanded="true" />
-            <element signature="e#4922#4923#0" expanded="true" />
-            <element signature="e#5401#5402#0" expanded="true" />
-            <element signature="e#5620#5621#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/deleting_flight_process.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="24" selection-start-line="24" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/review_details.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="48" column="53" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Delete_Flight_Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-360">
@@ -715,6 +708,51 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_selection__of__flight.xml">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/Delete_Flight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/deleting_flight_process.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="74" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+          <folding>
+            <element signature="e#2093#3509#0" expanded="true" />
+            <element signature="e#3508#3509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/email_generation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="131" column="57" selection-start-line="131" selection-start-column="57" selection-end-line="131" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/review_details.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/awesome/skylightflights/seat_selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="121" column="33" selection-start-line="121" selection-start-column="33" selection-end-line="121" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
