@@ -1,5 +1,6 @@
 # ANDROID APP FOR ZENSE RECRUITMENT 
 
+ Developed By Archit Sangal 
   
 
 # Idea 
@@ -32,4 +33,16 @@ The project is made using Android Libraries and Gradle and is scripted in Java. 
 
 # Experience 
 
-Making this project I understood a lot of new concept of java and managing the work in a self-made deadline. It also taught me to be patient in developing as in android studio the errors are not that well pointed out. If there is an error, we will know that error is there and what type of error is it but that will still be a suspense that at which line or statement it occurred and to debug a code of about 3600 lines, you really need to develop I skill which is to be patient. 
+Making this project I understood a lot of new concept of java and managing the work in a self-made deadline. It also taught me to be patient in developing as in android studio the errors are not that well pointed out. If there is an error, we will know that error is there and what type of error is it but that will still be a suspense that at which line or statement it occurred and to debug a code of about 3600 lines, you really need to develop I skill which is to be patient.
+
+# Screenshots And App Related Videos
+
+See the screenshots and videos of app in the Media Folder.
+
+# Editing The Project ( Only For Those Who Want To Improve This App)
+
+- Download the Android Studio 3.5 or later
+- Download The dependencies and Other SDK files
+- Install java "JDK 11"
+- Open The project in Android Studio and follow "TODO MENU"
+- To Test The App Run it on an Emulator or A Real Device.
