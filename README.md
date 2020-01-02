@@ -39,7 +39,7 @@ Making this project I understood a lot of new concept of java and managing the w
 
 See the screenshots and videos of app in the Media Folder.
 
-# Editing The Project ( Only For Those Who Want To Improve This App)
+## Editing The Project ( Only For Those Who Want To Improve This App)
 
 - Download the Android Studio 3.5 or later
 - Download The dependencies and Other SDK files
