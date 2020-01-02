@@ -31,7 +31,6 @@ public class review_details extends AppCompatActivity {
 
     }
 
-    // This Function is not used
     private void sendMessage() {
         final ProgressDialog dialog = new ProgressDialog(review_details.this);
         dialog.setTitle("Sending Email");
