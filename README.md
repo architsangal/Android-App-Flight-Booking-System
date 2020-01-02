@@ -35,9 +35,9 @@ The project is made using Android Libraries and Gradle and is scripted in Java. 
 
 Making this project I understood a lot of new concept of java and managing the work in a self-made deadline. It also taught me to be patient in developing as in android studio the errors are not that well pointed out. If there is an error, we will know that error is there and what type of error is it but that will still be a suspense that at which line or statement it occurred and to debug a code of about 3600 lines, you really need to develop I skill which is to be patient.
 
-# Screenshots And App Related Videos
+# App Related Screenshots
 
-See the screenshots and videos of app in the Media Folder.
+See the screenshots of app in the Media Folder.
 
 ## Editing The Project ( Only For Those Who Want To Improve This App)
 
