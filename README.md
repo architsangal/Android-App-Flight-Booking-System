@@ -32,6 +32,8 @@ Lastly, If you have the booking ID, Enter your name and Booking Id and get your 
 
 There is also a bank in database which has some virtual money. If you book a ticket of Rs 3000 then amount in bank will increase by 3000 and if you cancel a ticket Rs 3000 will be reduced from amount of bank. If a flight is cancelled and 6 seats were booked so then amount will be reduced by Rs18000.
 
-### Author
-Archit Sangal
-IIIT Bangalore
+
+
+Archit Sangal,
+
+IIIT Bangalore.
