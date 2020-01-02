@@ -1,6 +1,6 @@
-#Android App Used For Managing Flight Bookings
+# Android App Used For Managing Flight Bookings
 
-##Requirements For Running The App
+## Requirements For Running The App
 
 Android Stdio 3.5 or above
 Firebase Account
@@ -8,7 +8,7 @@ Gmail or Any Other Mail ID and it's password
 Proper Internet Connection
 Target SDK Version is 29 but minimum SDK version is 21 so an android phone for running the app
 
-##What All This Great App Can Do ?? Check it out Below....
+## What All This Great App Can Do ?? Check it out Below....
 
 App opens with an activity which is asking for some sort of a password. If you are a normal user who is booking a ticket you can proceed by just clicking on "Enter" but if you are an Admin you have to get yourself recoganised by entering the "CORRECT PASSWORD". If the entered password is wrong then app will consider you as a user and it will direct you to normal user interface activity else you will be directed to "Flight Management Admin Section". Lets first understand the Flight Management System i.e. it is given that you have entered the password correctly.
 
@@ -32,6 +32,6 @@ Lastly, If you have the booking ID, Enter your name and Booking Id and get your 
 
 There is also a bank in database which has some virtual money. If you book a ticket of Rs 3000 then amount in bank will increase by 3000 and if you cancel a ticket Rs 3000 will be reduced from amount of bank. If a flight is cancelled and 6 seats were booked so then amount will be reduced by Rs18000.
 
-##Author
-###Archit Sangal
-###IIIT Bangalore
+## Author
+### Archit Sangal
+### IIIT Bangalore
