@@ -9,3 +9,7 @@
 - Install java "JDK 11"
 - Open The project in Android Studio and follow "TODO MENU"
 - To Test The App Run it on an Emulator or A Real Device.
+
+## Screenshot Of The App
+
+Screenshots of the app are in Media Folder.
