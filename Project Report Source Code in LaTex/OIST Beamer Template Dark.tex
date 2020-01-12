@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Modified by Jeremie Gillet in March 2017 to make an OIST template
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[8pt]{beamer}
+
+\usepackage{graphicx} % Allows to include images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+\mode<presentation> {
+
+\usetheme{default}
+
+\usecolortheme[named=white]{structure} % White titles and such
+\setbeamercolor{normal text}{fg=white} % White text
+\setbeamercolor{background canvas}{bg=black} % Black background
+
+\setbeamertemplate{itemize item}{\color{white}$\bullet$} % Comment this line for default bullet points (triangles)
+
+\usepackage{helvet} % Helvetica Font 
+\renewcommand{\familydefault}{\sfdefault}
+
+\setbeamertemplate{navigation symbols}{} % No navigation symbols
+\setbeamertemplate{footline} % Only page number at the bottom
+ {\begin{minipage}{125mm} \vspace{-4 mm} \hfill \insertframenumber \end{minipage}}
+ }
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Short title]{Skylight Flights}
+\subtitle{
+Android App
+}
+
+\author{Archit Sangal} % Your name
+\date{} % Date, leave empty, use subtitle instead
+
+\begin{document}
+
+\setbeamertemplate{background}{\includegraphics[width=\paperwidth, trim = 0 0 0 -17]{title.png}} % Adding the background logo for the title page
+
+\begin{frame}[plain]
+\vspace*{1.55cm} % Use this spacing if author field is empty
+%\vspace*{5mm}  % Use this spacing if author field is used
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\setbeamertemplate{background}{\includegraphics[width=\paperwidth]{background.png}} % Adding the background logo for the rest of the slides
+
+\begin{frame}
+\frametitle{Android App Used For Managing Flight Bookings} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Problem Faced} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+\subsection{Time Consuming Process of search tickets in the website.}
+\subsection{Different apps for admin and users.}
+\subsection{Login is required for booking tickets.}
+\subsection{Lots of Ads.} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\begin{frame}
+\frametitle{Idea}
+It is a flight booking system which involves booking of new tickets, cancelling of existing tickets and retrieving back the booked tickets. It also has a well-guarded (or hidden section) of admin who can add and delete flights. It has a database which maintains the flights by its Unique Id number and date on which it has to departure.
+\end{frame}
+
+\begin{frame}
+\frametitle{Tech Stack}
+\begin{itemize}
+\item The project is made using Android Libraries and Gradle and is scripted in Java. 
+\item It uses the inbuilt functions of java 11 and Android Libraries like androidx and resource identifying mechanisms of android.widget.
+\item It also makes use of email packages of java.
+\item It uses the google provided database i.e. Firebase Firestore.
+\item It uses Realtime Database to update the available information and give a better experience to users.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Project Scope}
+\begin{itemize}
+\item This app can be made available on various platforms for download.
+\item These types of apps make booking much simpler and less time consuming.
+\item  It uses less Data (Internet Data) Resources that web booking.
+\item  It is more secure as App Security is managed indirectly by Android Security Systems while Data Base Security is managed by Google's Firebase Firestore Security.
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Requirements for Running the App}
+\begin{block}{Android Studio}
+ Android Studio 3.5 or above.
+ \end{block}
+
+\begin{block}{Firebase Accout}
+Firebase Account Gmail or Any Other Mail ID and it's password Proper Internet.\end{block}
+
+\begin{block}{SDK Version}
+Connection Target SDK Version is 29 but minimum SDK version is 21.\end{block}
+
+\begin{block}{Physical Device}
+An android phone for running the app.
+
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+\section{Solution} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+\subsection{Decreases time to search tickets in the website.}
+\subsection{Same app for admin and users.}
+\subsection{Login is not required for booking tickets.}
+\subsection{No Ads.} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\begin{frame}
+\frametitle{Experience}
+Making this project I understood a lot of new concept of java and managing the work in a self-made deadline. It also taught me to be patient in developing as in android studio the errors are not that well pointed out. If there is an error, we will know that error is there and what type of error is it but that will still be a suspense that at which line or statement it occurred and to debug a code of about 3600 lines, you really need to develop I skill which is to be patient.
+\end{frame}
+
+\begin{frame}
+\frametitle{Progress Of The Project}
+\\~
+App opens with an activity which is asking for some sort of a password. If you are a normal user who is booking a ticket you can proceed by just clicking on "Enter" but if you are an Admin you must get yourself recognized by entering the "CORRECT PASSWORD". If the entered password is wrong, then app will consider you as a user and it will direct you to normal user interface activity else you will be directed to "Flight Management Admin Section". Let's first understand the Flight Management System i.e. it is given that you have entered the password correctly.
+\\~\\~
+Password for entering in the Flight Management Activity (or the Admin Section): \\~\textbf{\textit{75790152222225109757}}
+\\~
+
+I know password is long, but it must be safe, so it is this long.Trick to remember it (Ignore it if you are not interested): -\\~
+
+first half of it "7579015222" and just append the reverse of the first part to the end of first part like this:
+
+\\~="7579015222" + (Reverse of ("7579015222"))
+\\~= "7579015222" + "2225109757"
+\\~= "75790152222225109757" or just 75790152222225109757.
+
+\\~\\~
+Now, as you have already logged in you will see 2 buttons.\end{frame}
+
+\begin{frame}
+\frametitle{Buttons Of Admin Section}
+\\~\\~1) First, "Adding A Flight": -\\~
+Enter the required information in the given places and click on "ADD FLIGHT" button. A toast message will appear that the flight is added, and you will be redirected to Admin Section. So now you can go for a Another Flight Addition or Choose Second option which is described as below.
+\\~\\~2) Second, "Deleting A Flight": -
+\\~If a case you want to delete a Flight, this is the button which will help you in doing that. After you click on this button, you will be Asked to Enter the date of Flight and Flight ID or Flight Number and that's it your flight is cancelled. It's now that easy. So, this was the Admin Section and Now Let's come to user section which will be used much more often than the admin section. So, close the app properly in your Android Device and now open it again like a user (basically restart the app). \textit{This is to ensure that the data of Users and Admin don't get mixed up}. When, you will open the app you will be asked for enter the password but this time we are a normal user so we will just click on enter and move on. Now that you are a user who want to manage or book a new flight booking, you will have 3 buttons in front of you.\end{frame}
+
+\begin{frame}
+\frametitle{Buttons Of User Section}
+\\~\\~
+1) First one is to book a new flight. Enter the required information. Finally comes seat selection. Now, there could have been a problem that if two people are booking seats at the same time there may be a chance that both of them want to select the same seat so in that case one who has clicked the "Proceed To Payment" button first will get the seat and the other user will get notified instantaneously that the particular seat the person wanted to select has already been selected by someone else. This is a REALTIME DATABASE INFORMER (i.e. Any change in database will reload the given set of information instantaneously). At the end you will be asked to enter your email address and when you press will "Go", and you will receive a "Conformation Mail". Yes, you read it right, you will receive a conformation mail
+which has to be stored by the customer for future reference.
+\\~\\~2) Secondly, now that we have Booking ID, enter your name and Booking Id and you can delete your ticket. It's that easy and safe. For this also you will get a mail of "Cancellation Conformation".
+\\~\\~3) Lastly, if you have the booking ID, enter your name and Booking Id and get your flight ticket and ticket status.
+\end{frame}
+
+\begin{frame}
+\frametitle{A Very Special Feature}
+\\~\\~
+There is also a bank in database which has some virtual money. If you book a ticket of Rs 3000 then
+amount in bank will increase by 3000 and if you cancel a ticket Rs 3000 will be reduced from amount of
+bank. If a flight is cancelled and 6 seats were booked so then amount will be reduced by Rs18000.
+\end{frame}
+
+
+\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+\frametitle{References}
+\begin{itemize}
+\item Google
+\item Free Courses Of Udemy
+\item YouTube
+\item Documentation of Firebase
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{The End}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
