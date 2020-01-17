@@ -13,3 +13,6 @@
 ## Screenshot Of The App
 
 Screenshots of the app are in Media Folder.
+
+## PR's
+All other pull requests are welcomed and appreciated.....
