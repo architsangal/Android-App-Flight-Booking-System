@@ -15,4 +15,5 @@
 Screenshots of the app are in Media Folder.
 
 ## PR's
-All other pull requests are welcomed and appreciated.....
+- Don't forget to check "Android Project Ideas Zense.pdf" for ideas.
+- All other pull requests are welcomed and appreciated.....
